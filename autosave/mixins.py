@@ -16,7 +16,8 @@ from django.urls import re_path as url
 from django.core.exceptions import ImproperlyConfigured, PermissionDenied, FieldDoesNotExist
 from django.forms.utils import ErrorDict
 from django.http import HttpResponse, Http404
-from django.utils.encoding import force_text
+# from django.utils.encoding import force_text # deprecated in Django 4
+from django.utils.encoding import force_str
 from django.utils.html import escape
 from django.utils import timezone
 from django.utils.safestring import mark_safe
